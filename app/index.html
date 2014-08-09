@@ -22,27 +22,21 @@
     <!-- endbuild -->
   </head>
   <body>
+    <div class="hero-unit searchScreen">
+        <h3>Upon Which Video Shall You Comment?</h3>
+        <!--input video url-->
+<!--         <input id="url_input" type="text" placeholder="Paste a YouTube video URL here"/>--> 
+        <input id="url_input" type="text" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
+        <input type="submit" value="Search">
+    </div>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-
-        <li>Sass</li>
-
-
-        <li>Modernizr</li>
-
-
-        <li>Bourbon & Neat</li>
-
-
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+    <div class="hero-unit commentScreen">
+        <!--need to import video title from API-->
+        <!--input for comment-->
+       <textarea id="comment_input" name="comments" cols="50" rows="4" placeholder="Enter your comment here"></textarea>
+       <input type="submit" class="comment_submit">
+        <!--field to display previously submitted comments-->
+        <div class="commentsRendered"></div>
     </div>
 
     <!-- build:js scripts/vendor.js -->
